@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300,600;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Trivia juega Gana y Aprende</title>
+</head>
+
+<body>
+
+	<section id="principal" class="active">
+		<div class="centered text-center quiz-name" id="divIngreso">
+			<h1 class="title-quiz">Bienvenido a la Trivia: Ríe, Juega y Aprende</h1>
+			<input type="text" value="" id="name" placeholder="Nombre" />
+        <input class="boton" id="enviar" type="submit" value="Empezar a Jugar"/>
+      </div>
+    </section>
+
+  <section id="bienvenida">
+    <div class="quiz-top" id="animal">
+        <img src="img/perro.svg" alt="" class="img-big" />
+        <p><i class="icono1"><img src="img/icono.svg" alt="" /></i>
+        <span>Cuidado animal</span></p>
+    </div>
+    <div class="centered text-center quiz-name">
+        <h2>
+          <strong>Hola</strong>
+            <span id="name-to-replace"> </span>
+              </h2>
+         <p>Nos gustaría que participaras en nuestra trivia ¿Puedes escoger un tema?</p>
+    </div>
+ <div class="quiz-bottom" id="ambiente">
+   <p><i class="icono2"><img src="img/icono2.svg" alt="" /></i>
+   <span>Cuidado Ambiental</span></p>
+    <img src="img/mundo.svg" alt="" class="img-big" />
+ </div>
+    </section>
+
+    <!--------------------------------------------- Pantallas preguntas Tipo A Cuidado animal --------------------------------------------->
+
+
+   <section id="seccion-preguntas-animal">
+    <div class="centered text-center">
+      <div class="questions-a active" id="questions-a-1">
+        <p> ¿Cada cuanto tiempo es recomendable bañar a tu perro?</p> 
+
+        <img src="img/perro.svg" alt="Imagen de higiene animal" />
+
+        <ul>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="questions-a-2">
+              <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> Bimensual </span> </p>
+          </li>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="questions-a-2">
+            <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> Trimestral </span></p>
+          </li>
+          <li class="btn-pregunta-uno" data-correct="si" data-destino="questions-a-2">
+            <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> Mensual </span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="centered text-center">
+      <div class="questions-a " id="questions-a-2">
+        <p> ¿Cuantas veces al día sacas a tu perro para sus deposiciones?</p> 
+
+        <img src="img/perro.svg" alt="Imagen de higiene animal" />
+
+        <ul>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="questions-a-3">
+            <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> Una vez al día. </span></p>
+          </li>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="questions-a-3">
+            <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> Nunca.</span></p> 
+          </li>
+          <li class="btn-pregunta-uno" data-correct="si" data-destino="questions-a-3">
+            <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> Dos veces al día.</span></p> 
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="centered text-center">
+      <div class="questions-a " id="questions-a-3">
+        <p> ¿Cada cuánto tiempo debe realizarse el cepillado del pelo en perros y gatos?</p> 
+
+        <img src="img/perro.svg" alt="Imagen de higiene animal" />
+
+        <ul>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="resultados">
+            <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> Semanal </span></p> 
+          </li>
+          <li class="btn-pregunta-uno" data-correct="si" data-destino="resultados">
+            <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> Diario </span></p> 
+          </li>
+          <li class="btn-pregunta-uno" data-correct="no" data-destino="resultados">
+            <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> Mensual </span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </section>
+
+
+
+<!--Preguntas cuidado ambiental-->
+  <section id="seccion-preguntas-ambiente">
+    <div class="centered text-center">
+      <div class="questions-b active" id="questions-b-1">
+        <p> ¿Que porcentaje del planeta tierra esta cubierta por bosques?</p> 
+
+        <img src="img/mundo.svg" alt="Imagen cuidado ambiental" />
+
+        <ul>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="questions-b-2">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> 10% </span></p>
+          </li>
+          <li class="btn-pregunta-dos" data-correct="si" data-destino="questions-b-2">
+             <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> 31% </span></p> 
+          </li>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="questions-b-2">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> 50% </span></p> 
+          </li>
+        </ul>
+      </div>
+      </div>
+    <div class="centered text-center">
+    <div class="questions-b" id="questions-b-2">
+      <p>¿Cuál de estas palabras no pertenece a las tres erres de la sostenibilidad?</p> 
+       <img src="img/mundo.svg" alt="Imagen cuidado ambiental" />
+        <ul>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="questions-b-3">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> Reciclar </span></p> 
+          </li>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="questions-b-3">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> Reducir </span></p> 
+          </li>
+          <li class="btn-pregunta-dos" data-correct="si" data-destino="questions-b-3">
+             <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> Respetar </span></p> 
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="centered text-center">
+   <div class="questions-b" id="questions-b-3">
+        <p> ¿Cuanta agua desperdicias si te lavas los dientes con el grifo abierto?</p> 
+
+        <img src="img/mundo.svg" alt="Imagen cuidado ambiental" />
+
+        <ul>
+          <li class="btn-pregunta-dos" data-correct="si" data-destino="resultados">
+             <i class="good"><img src="img/v.svg" alt=""></i>
+              <p><strong>a)</strong>
+              <span> 09 litros</span></p> 
+          </li>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="resultados">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>b)</strong>
+              <span> 4litros </span></p> 
+          </li>
+          <li class="btn-pregunta-dos" data-correct="no" data-destino="resultados">
+             <i class="error"><img src="img/x.svg" alt=""></i>
+              <p><strong>c)</strong>
+              <span> 200ml </span></p> 
+          </li>
+        </ul>
+    </div> 
+    </div>
+   </section>
+
+   <!--Resultados-->
+     <section id="resultados">
+        <div class="quiz-top" id="animal2">
+            <img src="img/perro.svg" alt="" class="img-big" />
+            <p><i class="icono1"><img src="img/icono.svg" alt="" /></i>
+            <span>Cuidado animal</span></p>
+        </div>
+      <div class="centered text-center quiz-name">
+        <div class="resultados active" id="resultados-trivia-ganador">
+            <h2><strong id="mensaje-resultado">¡Bien! Llegaste al final has alcanzado</strong></h2> 
+        </div>
+      </div>
+      <div class="quiz-bottom" id="ambiente2">
+          <p><i class="icono2"><img src="img/icono2.svg" alt="" /></i>
+            <span>Cuidado Ambiental</span></p>
+           <img src="img/mundo.svg" alt="" class="img-big" />
+       </div>
+     
+     </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
